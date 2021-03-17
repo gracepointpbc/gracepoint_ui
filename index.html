@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+   
+<head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>fLO</title>
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="images/favicon.ico" />
+      <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Typography CSS -->
+      <link rel="stylesheet" href="css/typography.css">
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="css/responsive.css">
+   </head>
+   <body>
+      <!-- loader Start -->
+      <div id="loading">
+         <div id="loading-center">
+         </div>
+      </div>
+      <!-- loader END -->
+      <!-- Wrapper Start -->
+      <div class="wrapper">
+         <!-- Sidebar  -->
+         
+         <!-- TOP Nav Bar -->
+         <div class="iq-top-navbar">
+            <div class="iq-navbar-custom">
+               <nav class="navbar navbar-expand-lg navbar-light p-0">
+                  <div class="iq-menu-bt d-flex align-items-center">
+                     <div class="wrapper-menu">
+                        <div class="main-circle"><i class="ri-menu-line"></i></div>
+                        <div class="hover-circle"><i class="ri-close-fill"></i></div>
+                     </div>
+                     <div class="iq-navbar-logo d-flex justify-content-between ml-3">
+                        <a href="index.html" class="header-logo">
+                        <img src="images/logo-1.png" class="img-fluid rounded" alt="">
+                        <span>GracePoint Token </span>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="iq-search-bar">
+                     <form action="#" class="searchbox">
+                        <input type="text" class="text search-input" placeholder="Type here to search...">
+                        <a class="search-link" href="#"><i class="ri-search-line"></i></a>
+                     </form>
+                  </div>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"  aria-label="Toggle navigation">
+                  <i class="ri-menu-3-line"></i>
+                  </button>
+                
+                  <!-- <ul class="navbar-list">
+                     <li class="line-height">
+                        <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
+                           <img src="images/user/1.jpg" class="img-fluid rounded mr-3" alt="user">
+                           <div class="caption">
+                              <h6 class="mb-0 line-height">Barry Tech</h6>
+                              <p class="mb-0">Manager</p>
+                           </div>
+                        </a>
+                        <div class="iq-sub-dropdown iq-user-dropdown">
+                           <div class="iq-card shadow-none m-0">
+                              <div class="iq-card-body p-0 ">
+                                 <div class="bg-primary p-3">
+                                    <h5 class="mb-0 text-white line-height">Hello Barry Tech</h5>
+                                    <span class="text-white font-size-12">Available</span>
+                                 </div>
+                                 <a href="profile.html" class="iq-sub-card iq-bg-primary-hover">
+                                    <div class="media align-items-center">
+                                       <div class="rounded iq-card-icon iq-bg-primary">
+                                          <i class="ri-file-user-line"></i>
+                                       </div>
+                                       <div class="media-body ml-3">
+                                          <h6 class="mb-0 ">My Profile</h6>
+                                          <p class="mb-0 font-size-12">View personal profile details.</p>
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <a href="profile-edit.html" class="iq-sub-card iq-bg-primary-hover">
+                                    <div class="media align-items-center">
+                                       <div class="rounded iq-card-icon iq-bg-primary">
+                                          <i class="ri-profile-line"></i>
+                                       </div>
+                                       <div class="media-body ml-3">
+                                          <h6 class="mb-0 ">Edit Profile</h6>
+                                          <p class="mb-0 font-size-12">Modify your personal details.</p>
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <a href="account-setting.html" class="iq-sub-card iq-bg-primary-hover">
+                                    <div class="media align-items-center">
+                                       <div class="rounded iq-card-icon iq-bg-primary">
+                                          <i class="ri-account-box-line"></i>
+                                       </div>
+                                       <div class="media-body ml-3">
+                                          <h6 class="mb-0 ">Account settings</h6>
+                                          <p class="mb-0 font-size-12">Manage your account parameters.</p>
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <a href="privacy-setting.html" class="iq-sub-card iq-bg-primary-hover">
+                                    <div class="media align-items-center">
+                                       <div class="rounded iq-card-icon iq-bg-primary">
+                                          <i class="ri-lock-line"></i>
+                                       </div>
+                                       <div class="media-body ml-3">
+                                          <h6 class="mb-0 ">Privacy Settings</h6>
+                                          <p class="mb-0 font-size-12">Control your privacy parameters.</p>
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <div class="d-inline-block w-100 text-center p-3">
+                                    <a class="bg-primary iq-sign-btn" href="sign-in.html" role="button">Sign out<i class="ri-login-box-line ml-2"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                  </ul> -->
+               </nav>
+            </div>
+         </div>
+         <!-- TOP Nav Bar END -->
+         
+         <!-- Page Content  -->
+         <div id="content-page" class="content-page">
+            <div class="container-fluid">
+               <div class="row">
+                  <div center class="col-lg-6">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                              <div class="iq-card-body">
+                                 <div class="top-block d-flex align-items-center justify-content-between">
+                                    <h5>Private Sales</h5>
+                                    <span class="badge badge-primary">Presale</span>
+                                 </div>
+                                 <h3>flo<span class="counter">35000</span></h3>
+                                 
+                                 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                              <div class="iq-card-body">
+                                 <div class="top-block d-flex align-items-center justify-content-between mt-1">
+                                    <h5>Public Sales</h5>
+                                    <span class="badge badge-warning">Public Sales</span>
+                                 </div>
+                                 <h3>flo<span class="counter">2500</span></h3>
+                                 <div class="d-flex align-items-center justify-content-between mt-1">
+                                 </div>
+                                
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                              <div class="iq-card-body">
+                                 <div class="top-block d-flex align-items-center justify-content-between mt-1">
+                                    <h5>Dominion Real Estate</h5>
+                                    <span class="badge badge-danger">Dominion Real Estate</span>
+                                 </div>
+                                 <h3>flo<span class="counter">55000</span></h3>
+                                 
+                              
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                              <div class="iq-card-body">
+                                 <div class="top-block d-flex align-items-center justify-content-between">
+                                    <h5>Reserved</h5>
+                                    <span class="badge badge-info">Reserved</span>
+                                 </div>
+                                 <h3>flo<span class="counter">3,000,000</span></h3>
+                                 
+                                
+                              </div>
+                           </div>
+                           
+                        </div>
+                     </div>
+
+
+                     
+                  </div>
+
+                  <div class="col-sm-6">
+                     <h1 class="mb-0 text-center">Sell Token</h1>
+                     <p class="text-center text-dark">Enter your Receiver address.</p>
+                     <class="col-sm-6">
+                     <form class="mt-4">
+                         <div class="form-group">
+                             <input type="email" class="form-control mb-0" id="exampleInputEmail1" placeholder="Enter adress">
+                         </div>
+                        
+                   
+                         <div class="sign-info text-center">
+                             <button type="submit" class="btn btn-primary d-block w-100 mb-2">Send Token</button>
+                         </div>
+                     </form>
+           </div>
+           
+                               
+                  <div class="col-sm-12">
+                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-header d-flex justify-content-between">
+                           <div class="iq-header-title">
+                              <h4 class="card-title"> Transaction History</h4>
+                           </div>
+                           
+                        </div>
+                        <div class="iq-card-body">
+                           <div class="table-responsive">
+                              <table class="table mb-0 table-borderless">
+                                 <thead>
+                                    <tr>
+                                       <th scope="col">ICO Stage</th>
+                                       <th scope="col">Holder Adress</th>
+                                       <th scope="col">Dollar Value</th>
+                                       <th scope="col">Period</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>Private sale</td>
+                                       <td>0x5B38Da6a701c568545dCfcB03FcB875f56beddC4</td>
+                                       <td>$1000.00</td>
+                                       <td>March</td>
+                                      
+                                      
+                                    </tr>
+                                    <tr>
+                                       <td>Public Sale</td>
+                                       <td>0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2</td>
+                                       <td>$600.00</td>
+                                       <td>March</td>
+                                      
+                                    </tr>
+                                    <tr>
+                                       <td>Hidden Heart Farms</td>
+                                       <td>0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db</td>
+                                       <td>$2000.00</td>
+                                       <td>Aprial</td>
+                                       
+                                    </tr>
+                                    <tr>
+                                       <td>Dominion Real Estate</td>
+                                       <td>0x78731D3Ca6b7E34aC0F824c42a7cC18A495cabaB</td>
+                                       <td>$1200.00</td>
+                                       <td>March</td>
+                                      
+                                    </tr>
+                                    <tr>
+                                       <td>Public Sale</td>
+                                       <td>0x617F2E2fD72FD9D5503197092aC168c91465E7f2</td>
+                                       <td>$0.00</td>
+                                       <td>March</td>
+                                      
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+
+                     
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Wrapper END -->
+       <!-- Footer -->
+      <footer class="iq-footer">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-6">
+                  <ul class="list-inline mb-0">
+                     <li class="list-inline-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+                     <li class="list-inline-item"><a href="terms-of-service.html">Terms of Use</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-6 text-right">
+                  Copyright 2021 <a href="#">Gracepoint Token</a> All Rights Reserved.
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Footer END -->
+    
+       <!-- color-customizer END -->
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Appear JavaScript -->
+      <script src="js/jquery.appear.js"></script>
+      <!-- Countdown JavaScript -->
+      <script src="js/countdown.min.js"></script>
+      <!-- Counterup JavaScript -->
+      <script src="js/waypoints.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+      <!-- Wow JavaScript -->
+      <script src="js/wow.min.js"></script>
+      <!-- Apexcharts JavaScript -->
+      <script src="js/apexcharts.js"></script>
+      <!-- Slick JavaScript -->
+      <script src="js/slick.min.js"></script>
+      <!-- Select2 JavaScript -->
+      <script src="js/select2.min.js"></script>
+      <!-- Owl Carousel JavaScript -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- Magnific Popup JavaScript -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Smooth Scrollbar JavaScript -->
+      <script src="js/smooth-scrollbar.js"></script>
+      <!-- lottie JavaScript -->
+      <script src="js/lottie.js"></script>
+      <!-- Raphael-min JavaScript -->
+      <script src="js/raphael-min.js"></script>
+      <!-- am core JavaScript -->
+      <script src="js/core.js"></script>
+      <!-- am charts JavaScript -->
+      <script src="js/charts.js"></script>
+      <!-- am animated JavaScript -->
+      <script src="js/animated.js"></script>
+      <!-- am kelly JavaScript -->
+      <script src="js/kelly.js"></script>
+      <!-- am maps JavaScript -->
+      <script src="js/maps.js"></script>
+      <!-- am worldLow JavaScript -->
+      <script src="js/worldLow.js"></script>
+      <!-- Morris JavaScript -->
+      <script src="js/morris.js"></script>
+      <!-- Morris min JavaScript -->
+      <script src="js/morris.min.js"></script>
+      <!-- Style Customizer -->
+      <script src="js/style-customizer.js"></script>
+      <!-- Chart Custom JavaScript -->
+      <script src="js/chart-custom.js"></script>
+      <!-- Custom JavaScript -->
+      <script src="js/custom.js"></script>
+   </body>
+
+</html>
